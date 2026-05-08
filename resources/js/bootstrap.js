@@ -1,4 +1,5 @@
-import axios from 'axios';
-window.axios = axios;
+import './bootstrap';
+import { createApp } from 'vue';
 
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+const app = createApp({});
+app.mount('#app');
